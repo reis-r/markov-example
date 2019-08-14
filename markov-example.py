@@ -105,7 +105,7 @@ def choose_key(options: Tuple[str, ...] = ("A", "The")) -> str:
     return choice(options) if options else "A"
 
 
-def generate_reply(file_name, text: str) -> str:
+def generate_reply(file_name: str, text: str) -> str:
     '''Function that will put everything together'''
     key = choose_key(text.split())
     return piped(
