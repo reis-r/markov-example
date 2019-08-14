@@ -22,7 +22,7 @@ def books_file(file_name: str) -> str:
 
 def string_cleaner(string: str) -> str:
     '''Main function for cleaning the books string'''
-    return string.replace('"', '"').replace(".", " <EOS> ")
+    return string.replace('"', ' ').replace(".", " <EOS> ")
 
 
 def split(string: str) -> List[str]:
